@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Digital - Le Gourmet</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="container-fluid p-0 min-vh-100">
+        <!-- Header -->
+        <header class="bg-gradient text-black text-center py-5 header-gradient">
+            <div class="container">
+                <h1 class="display-4 fw-bold mb-3">🍽️ Le Gourmet</h1>
+                <p class="lead mb-0">Menu actuel - Valable jusqu'au 31/12/2026</p>
+                <div class="mt-3">
+                    <span class="badge bg-light text-dark fs-6 px-3 py-2">QR Code Menu</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="container pb-5">
+            <!-- Navigation par onglets -->
+            <ul class="nav nav-pills nav-fill mb-4 justify-content-center tab-nav" id="menuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="entrees-tab" data-bs-toggle="pill" data-bs-target="#entrees" type="button" role="tab">
+                        <i class="bi bi-appetizer me-2"></i>Entrées
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="plats-tab" data-bs-toggle="pill" data-bs-target="#plats" type="button" role="tab">
+                        <i class="bi bi-fire me-2"></i>Plats
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="desserts-tab" data-bs-toggle="pill" data-bs-target="#desserts" type="button" role="tab">
+                        <i class="bi bi-heart-fill me-2"></i>Desserts
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="boissons-tab" data-bs-toggle="pill" data-bs-target="#boissons" type="button" role="tab">
+                        <i class="bi bi-cup-hot me-2"></i>Boissons
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Contenu des onglets -->
+            <div class="tab-content" id="menuTabsContent">
+                <!-- Entrées -->
+              <div class="tab-pane fade show active" id="entrees" role="tabpanel">
+    <div class="row g-4">
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="https://i.pinimg.com/736x/ee/62/0a/ee620a2e0f2f42d29e494f2c68ec23ee.jpg" class="card-img-top" alt="Velouté">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Velouté de potiron</h5>
+                    <p class="card-text flex-grow-1">Velouté onctueux de potiron avec crème fraîche et croûtons maison</p>
+                    <div class="d-flex justify-content-between align-items-end">
+                        <span class="badge bg-warning text-dark fs-6 px-3 py-2">Populaire</span>
+                        <h4 class="text-danger mb-0">4000FCFA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/saladecesar.jpg" class="card-img-top" alt="Salade César">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Salade César</h5>
+                    <p class="card-text flex-grow-1">Laitue romaine, poulet grillé, parmesan, croûtons, sauce César maison</p>
+                    <h4 class="text-danger mb-0">2500FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Nouvelles entrées ajoutées -->
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/terrinedecampagne.jpg" class="card-img-top" alt="Terrine de campagne">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Terrine de campagne</h5>
+                    <p class="card-text flex-grow-1">Terrine maison au porc, foie et herbes, servie avec cornichons et pain de campagne</p>
+                    <h4 class="text-danger mb-0">4000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/gaspacho.jpg" class="card-img-top" alt="Gaspacho">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Gaspacho andalou</h5>
+                    <p class="card-text flex-grow-1">Soupe froide de tomates, poivrons, concombre et ail, servie avec croûtons</p>
+                    <div class="d-flex justify-content-between align-items-end">
+                        <span class="badge bg-success fs-6 px-3 py-2">Frais</span>
+                        <h4 class="text-danger mb-0">5500FCFA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/escargot.jpg" class="card-img-top" alt="Escargots">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Escargots de Bourgogne</h5>
+                    <p class="card-text flex-grow-1">Escargots cuits au beurre d'ail et persil, dans leurs coquilles</p>
+                    <h4 class="text-danger mb-0">6000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/assiettes fromagers.jpg" class="card-img-top" alt="Assiette de fromages">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Assiette de fromages</h5>
+                    <p class="card-text flex-grow-1">Sélection de 4 fromages régionaux avec fruits secs et confiture</p>
+                    <h4 class="text-danger mb-0">2500FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/oeufmimosa.jpg" class="card-img-top" alt="Oeufs mimosa">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Œufs mimosa</h5>
+                    <p class="card-text flex-grow-1"> 3 Œufs durs farcis à la mayonnaise, moutarde et ciboulette</p>
+                    <div class="d-flex justify-content-between align-items-end">
+                        <span class="badge bg-info text-white fs-6 px-3 py-2">Classique</span>
+                        <h4 class="text-danger mb-0">2000FCFA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/saumon.jpg" class="card-img-top" alt="Saumon fumé">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Saumon fumé</h5>
+                    <p class="card-text flex-grow-1"> 6 tranches de Saumon fumé, crème fraîche</p>
+                    <h4 class="text-danger mb-0">5000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/rillettescarn.jpg" class="card-img-top" alt="Rillettes">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Rillettes de canard</h5>
+                    <p class="card-text flex-grow-1">Rillettes artisanales de canard, pain grillé</p>
+                    <h4 class="text-danger mb-0">5500FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/guacamole.jpg" class="card-img-top" alt="Guacamole">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Guacamole frais</h5>
+                    <p class="card-text flex-grow-1">Avocat mûr, citron vert, coriandre, tomates et oignon rouge</p>
+                    <div class="d-flex justify-content-between align-items-end">
+                        <span class="badge bg-warning text-dark fs-6 px-3 py-2">Végétarien</span>
+                        <h4 class="text-danger mb-0">2000FCFA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+               <!-- Plats -->
+<div class="tab-pane fade" id="plats" role="tabpanel">
+    <div class="row g-4">
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/magret.jpg" class="card-img-top" alt="Magret">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Magret de canard</h5>
+                    <p class="card-text flex-grow-1">Magret rôti, pommes de terre sarladaises, sauce aux figues</p>
+                    <h4 class="text-danger mb-0">25000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/filetbar.jpg" class="card-img-top" alt="Bar">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Filet de bar grillé</h5>
+                    <p class="card-text flex-grow-1">Filet de bar, légumes poêlés, beurre blanc</p>
+                    <h4 class="text-danger mb-0">15000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <!-- 8 NOUVEAUX PLATS ajoutés -->
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/boeufsbourgiginon.jpg" class="card-img-top" alt="Boeuf bourguignon">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Bœuf bourguignon</h5>
+                    <p class="card-text flex-grow-1">Morceaux de bœuf mijotés au vin rouge, carottes, oignons, champignons</p>
+                    <div class="d-flex justify-content-between align-items-end">
+                        <span class="badge bg-warning text-dark fs-6 px-3 py-2">Populaire</span>
+                        <h4 class="text-danger mb-0">9000FCFA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/entrtecoteboeuf.jpg" class="card-img-top" alt="Entrecôte">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Entrecôte de bœuf</h5>
+                    <p class="card-text flex-grow-1">Entrecôte 250g, frites maison, sauce poivre ou échalotes</p>
+                    <h4 class="text-danger mb-0">15000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/blanquettes.jpg" class="card-img-top" alt="Blanquette de veau">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Blanquette de veau</h5>
+                    <p class="card-text flex-grow-1">Veau tendre, sauce crème, riz basmati, légumes printaniers</p>
+                    <h4 class="text-danger mb-0">9500FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/burger.jpg" class="card-img-top" alt="Loup de mer">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Burger classique</h5>
+                    <p class="card-text flex-grow-1">Un burger classique et une portion de frites</p>
+                    <h4 class="text-danger mb-0">4500FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/poisson braise.jpg" class="card-img-top" alt="Coq au vin">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Poulet Braisé</h5>
+                    <p class="card-text flex-grow-1">Un Poulet braisé ,une portion d'alloco ,une portion d'attiéké </p>
+                    <div class="d-flex justify-content-between align-items-end">
+                        <span class="badge bg-success fs-6 px-3 py-2">Régional</span>
+                        <h4 class="text-danger mb-0">10500FCFA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/pouletalloco.jpg" class="card-img-top" alt="Veau normand">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Poulet et alloco</h5>
+                    <p class="card-text flex-grow-1">Un poulet frit et une portion d'alloco</p>
+                    <h4 class="text-danger mb-0">5000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/frites.jpg" class="card-img-top" alt="St Jacques">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Frites</h5>
+                    <p class="card-text flex-grow-1">Pomme de terre frit en tranches</p>
+                    <h4 class="text-danger mb-0">1000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/alloco.jpg" class="card-img-top" alt="Porc basquaise">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Alloco</h5>
+                    <p class="card-text flex-grow-1">Banane plantains frits</p>
+                    <h4 class="text-danger mb-0">1000FCFA</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Desserts -->
+<div class="tab-pane fade" id="desserts" role="tabpanel">
+    <div class="row g-4">
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/cremebrule.jpg" class="card-img-top" alt="Crème brûlée">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Crème brûlée</h5>
+                    <p class="card-text flex-grow-1">Vanille, croquant caramel</p>
+                    <h4 class="text-danger mb-0">3000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <!-- 8 NOUVEAUX DESSERTS ajoutés -->
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/tiramisu.jpg" class="card-img-top" alt="Tiramisu">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Tiramisu maison</h5>
+                    <p class="card-text flex-grow-1">Biscuits trempés au café, mascarpone, cacao amer</p>
+                <div class="d-flex justify-content-between align-items-end">
+                    <span class="badge bg-warning text-dark fs-6 px-3 py-2">Populaire</span>
+                    <h4 class="text-danger mb-0">8€</h4>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/profoteroles.jpg" class="card-img-top" alt="Profiteroles">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Profiteroles</h5>
+                    <p class="card-text flex-grow-1"> 5 Choux à la vanille, sauce chocolat chaud</p>
+                    <h4 class="text-danger mb-0">3500FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/ilesflottante.jpg" class="card-img-top" alt="Île flottante">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Île flottante</h5>
+                    <p class="card-text flex-grow-1">Blancs d'œufs pochés, crème anglaise vanille, caramel</p>
+                    <div class="d-flex justify-content-between align-items-end">
+                        <span class="badge bg-info text-white fs-6 px-3 py-2">Classique</span>
+                        <h4 class="text-danger mb-0">3000FCFA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/sorbet.jpg" class="card-img-top" alt="Sorbet">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Sorbet artisanal</h5>
+                    <p class="card-text flex-grow-1">3 boules au choix : citron, mangue, cassis ou fraise</p>
+                    <h4 class="text-danger mb-0">4000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/milles feuile.jpg" class="card-img-top" alt="Mille-feuille">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Mille-feuille vanille</h5>
+                    <p class="card-text flex-grow-1">Pâte feuilletée, crème pâtissière, glaçage fondant</p>
+                    <h4 class="text-danger mb-0">5000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/moelleux.jpg" class="card-img-top" alt="Moelleux chocolat">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Moelleux chocolat</h5>
+                    <p class="card-text flex-grow-1">Chocolat noir 70%, cœur coulant, glace vanille</p>
+                    <div class="d-flex justify-content-between align-items-end">
+                        <span class="badge bg-danger fs-6 px-3 py-2">Chocolat</span>
+                        <h4 class="text-danger mb-0">3000FCFA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/cheesecakecitron.jpg" class="card-img-top" alt="Cheesecake">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Cheesecake citron</h5>
+                    <p class="card-text flex-grow-1">(une part)Fromage frais, biscuit spéculoos, coulis de citron</p>
+                    <h4 class="text-danger mb-0">3000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/souflet.jpg" class="card-img-top" alt="Soufflé">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Soufflé au chocolat</h5>
+                    <p class="card-text flex-grow-1">Soufflé avec du chocolat hyper agréable</p>
+                    <h4 class="text-danger mb-0">2000FCFA</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+             <!-- Boissons -->
+<div class="tab-pane fade" id="boissons" role="tabpanel">
+    <div class="row g-4">
+        <!-- 8 BOISSONS ajoutées -->
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/eau.jpg" class="card-img-top" alt="Eau minérale">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Eau minérale</h5>
+                    <p class="card-text flex-grow-1">Eau plate ou gazeuse, 50cl</p>
+                    <h4 class="text-danger mb-0">1000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/jus orange.jpg" class="card-img-top" alt="Jus d'orange">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Jus d'orange pressé</h5>
+                    <p class="card-text flex-grow-1">Orange fraîchement pressée, 25cl</p>
+                    <div class="d-flex justify-content-between align-items-end">
+                        <span class="badge bg-warning text-dark fs-6 px-3 py-2">Frais</span>
+                        <h4 class="text-danger mb-0">1500FCFA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/coupe.jpg" class="card-img-top" alt="Vin rouge">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Vin rouge</h5>
+                    <p class="card-text flex-grow-1"> Une coupe de Pic-Saint-Loup ou Bordeaux, verre 15cl</p>
+                    <h4 class="text-danger mb-0">3000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/vinblanc.jpg" class="card-img-top" alt="Vin blanc">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Vin blanc</h5>
+                    <p class="card-text flex-grow-1">Une coupe de Chardonnay ou Sauvignon, verre 15cl</p>
+                    <h4 class="text-danger mb-0">3500FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/fanta.jpg" class="card-img-top" alt="Rosé">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Fanta</h5>
+                    <p class="card-text flex-grow-1">Une cannette de Fanta</p>
+                    <div class="d-flex justify-content-between align-items-end">
+                        <span class="badge bg-success fs-6 px-3 py-2">Sucrerie</span>
+                        <h4 class="text-danger mb-0">500FCFA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/coca.jpg" class="card-img-top" alt="Kir">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Coca-Cola</h5>
+                    <p class="card-text flex-grow-1">Une cannette de Coca-Cola</p>
+                    <h4 class="text-danger mb-0">500FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/bubbleteamatcha.jpg" class="card-img-top" alt="Coca-Cola">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Bubble Tea Matcha</h5>
+                    <p class="card-text flex-grow-1">Un verre de Bubble tea Matcha hyper délicieux</p>
+                    <h4 class="text-danger mb-0">3000FCFA</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <div class="card h-100 menu-card shadow-sm">
+                <img src="images/CAFE.jpg" class="card-img-top" alt="Café">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Café Expresso</h5>
+                    <p class="card-text flex-grow-1">Café moulu minute, expresso ou allongé</p>
+                    <div class="d-flex justify-content-between align-items-end">
+                        <span class="badge bg-dark text-white fs-6 px-3 py-2">Expresso</span>
+                        <h4 class="text-danger mb-0">1500FCFA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6 class="mb-3">📞 01 23 45 67 89</h6>
+                        <p class="mb-0">contact@legourmet.fr</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="mb-2">Horaires</h6>
+                        <p class="mb-0">8h-14h30 | 16h-22h<br>7j/7</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* Font globale */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header gradient */
+.header-gradient {
+    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+}
+.h1{
+    color: black
+}
+/* Navigation onglets */
+.tab-nav .nav-link {
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    color: #6c757d;
+}
+
+.tab-nav .nav-link:hover {
+    color: #ff6b6b !important;
+    transform: translateY(-2px);
+}
+
+.tab-nav .nav-link.active {
+    background: linear-gradient(135deg, #ff6b6b, #feca57) !important;
+    color: white !important;
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+}
+
+/* Cards menu */
+.menu-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+}
+
+.menu-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Responsive amélioré */
+@media (max-width: 768px) {
+    .tab-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-link {
+        margin: 0 5px !important;
+    }
+}
+
+/* Animations */
+.tab-pane {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
